@@ -1,0 +1,16 @@
+C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.exe.config
+C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.exe
+C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.pdb
+C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.xml
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.vbprojAssemblyReference.cache
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Resources.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.vbproj.GenerateResource.cache
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.exe
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.xml
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.pdb
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Admin.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Login.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Principal.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Eliminar.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Buscar.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Registrar.resources
