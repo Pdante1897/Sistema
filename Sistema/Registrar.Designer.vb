@@ -23,6 +23,8 @@ Partial Class Registrar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -48,8 +50,7 @@ Partial Class Registrar
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,6 +58,7 @@ Partial Class Registrar
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.TextBox9)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button4)
         Me.Panel1.Controls.Add(Me.DateTimePicker1)
@@ -87,6 +89,24 @@ Partial Class Registrar
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(776, 426)
         Me.Panel1.TabIndex = 2
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(437, 132)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(276, 205)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 30
+        Me.PictureBox1.TabStop = False
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(437, 68)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 29
+        Me.Button4.Text = "Buscar Foto"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'DateTimePicker1
         '
@@ -128,7 +148,7 @@ Partial Class Registrar
         '
         Me.TextBox8.Location = New System.Drawing.Point(123, 253)
         Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox8.Size = New System.Drawing.Size(200, 20)
         Me.TextBox8.TabIndex = 21
         '
         'Label9
@@ -145,7 +165,7 @@ Partial Class Registrar
         '
         Me.TextBox7.Location = New System.Drawing.Point(123, 227)
         Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox7.Size = New System.Drawing.Size(200, 20)
         Me.TextBox7.TabIndex = 19
         '
         'Label8
@@ -162,7 +182,7 @@ Partial Class Registrar
         '
         Me.TextBox6.Location = New System.Drawing.Point(123, 201)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(200, 20)
         Me.TextBox6.TabIndex = 17
         '
         'Label7
@@ -179,7 +199,7 @@ Partial Class Registrar
         '
         Me.TextBox5.Location = New System.Drawing.Point(123, 175)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(200, 20)
         Me.TextBox5.TabIndex = 15
         '
         'Label6
@@ -196,7 +216,7 @@ Partial Class Registrar
         '
         Me.TextBox4.Location = New System.Drawing.Point(123, 149)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(200, 20)
         Me.TextBox4.TabIndex = 13
         '
         'Label5
@@ -213,7 +233,7 @@ Partial Class Registrar
         '
         Me.TextBox3.Location = New System.Drawing.Point(123, 123)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(200, 20)
         Me.TextBox3.TabIndex = 11
         '
         'Label4
@@ -230,7 +250,7 @@ Partial Class Registrar
         '
         Me.TextBox2.Location = New System.Drawing.Point(123, 97)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
         Me.TextBox2.TabIndex = 9
         '
         'Label3
@@ -247,7 +267,7 @@ Partial Class Registrar
         '
         Me.TextBox1.Location = New System.Drawing.Point(123, 71)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(183, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
         Me.TextBox1.TabIndex = 7
         '
         'Label2
@@ -302,22 +322,12 @@ Partial Class Registrar
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Button4
+        'TextBox9
         '
-        Me.Button4.Location = New System.Drawing.Point(462, 73)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 29
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(437, 156)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(276, 148)
-        Me.PictureBox1.TabIndex = 30
-        Me.PictureBox1.TabStop = False
+        Me.TextBox9.Location = New System.Drawing.Point(437, 101)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(276, 20)
+        Me.TextBox9.TabIndex = 31
         '
         'Registrar
         '
@@ -364,4 +374,5 @@ Partial Class Registrar
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Button4 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents TextBox9 As TextBox
 End Class

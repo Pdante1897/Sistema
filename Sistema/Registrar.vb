@@ -10,6 +10,10 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         OpenFileDialog1.Filter = "Imagenes (*.jpg)|*.jpg|Imagenes (*.png)|*.png"
         OpenFileDialog1.ShowDialog()
+        TextBox9.Text = OpenFileDialog1.FileName()
+
+        PictureBox1.Load(TextBox9.Text)
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
