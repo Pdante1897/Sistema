@@ -1,4 +1,6 @@
-﻿Public Class Login
+﻿Imports System.IO
+
+Public Class Login
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim registrar As New Registrar
         registrar.Show()
@@ -11,7 +13,7 @@
             Me.Hide()
         Else
             MessageBox.Show("Credenciales incorrectras")
-            TextBox1.Text = ""
+            TextBox1.Text = My.Computer.FileSystem.CurrentDirectory
             TextBox2.Text = ""
         End If
     End Sub

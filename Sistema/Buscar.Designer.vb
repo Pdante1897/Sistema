@@ -23,6 +23,8 @@ Partial Class Buscar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -47,8 +49,6 @@ Partial Class Buscar
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -84,8 +84,25 @@ Partial Class Buscar
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(793, 426)
+        Me.Panel1.Size = New System.Drawing.Size(776, 426)
         Me.Panel1.TabIndex = 3
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(123, 283)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox9.TabIndex = 32
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label12.Location = New System.Drawing.Point(430, 71)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(28, 13)
+        Me.Label12.TabIndex = 31
+        Me.Label12.Text = "Foto"
         '
         'PictureBox1
         '
@@ -296,23 +313,6 @@ Partial Class Buscar
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Buscar"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label12.Location = New System.Drawing.Point(430, 71)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(28, 13)
-        Me.Label12.TabIndex = 31
-        Me.Label12.Text = "Foto"
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(123, 283)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(200, 20)
-        Me.TextBox9.TabIndex = 32
         '
         'Buscar
         '
