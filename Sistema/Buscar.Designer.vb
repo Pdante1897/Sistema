@@ -23,10 +23,11 @@ Partial Class Buscar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
@@ -56,10 +57,11 @@ Partial Class Buscar
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.TextBox11)
+        Me.Panel1.Controls.Add(Me.TextBox10)
         Me.Panel1.Controls.Add(Me.TextBox9)
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.DateTimePicker1)
         Me.Panel1.Controls.Add(Me.Label11)
         Me.Panel1.Controls.Add(Me.Label10)
         Me.Panel1.Controls.Add(Me.TextBox8)
@@ -87,6 +89,20 @@ Partial Class Buscar
         Me.Panel1.Size = New System.Drawing.Size(776, 426)
         Me.Panel1.TabIndex = 3
         '
+        'TextBox11
+        '
+        Me.TextBox11.Location = New System.Drawing.Point(433, 101)
+        Me.TextBox11.Name = "TextBox11"
+        Me.TextBox11.Size = New System.Drawing.Size(276, 20)
+        Me.TextBox11.TabIndex = 34
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(123, 314)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(200, 20)
+        Me.TextBox10.TabIndex = 33
+        '
         'TextBox9
         '
         Me.TextBox9.Location = New System.Drawing.Point(123, 283)
@@ -106,19 +122,12 @@ Partial Class Buscar
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(433, 94)
+        Me.PictureBox1.Location = New System.Drawing.Point(433, 130)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(276, 205)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 30
         Me.PictureBox1.TabStop = False
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(123, 317)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 28
         '
         'Label11
         '
@@ -320,6 +329,7 @@ Partial Class Buscar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Buscar"
@@ -333,7 +343,6 @@ Partial Class Buscar
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents TextBox8 As TextBox
@@ -358,4 +367,6 @@ Partial Class Buscar
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label12 As Label
+    Friend WithEvents TextBox10 As TextBox
+    Friend WithEvents TextBox11 As TextBox
 End Class
