@@ -58,4 +58,5 @@ Public Class Buscar
         clear()
 
     End Sub
+
 End Class

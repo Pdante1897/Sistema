@@ -91,6 +91,7 @@ Partial Class Buscar
         '
         'TextBox11
         '
+        Me.TextBox11.Enabled = False
         Me.TextBox11.Location = New System.Drawing.Point(433, 101)
         Me.TextBox11.Name = "TextBox11"
         Me.TextBox11.Size = New System.Drawing.Size(276, 20)
@@ -98,14 +99,16 @@ Partial Class Buscar
         '
         'TextBox10
         '
-        Me.TextBox10.Location = New System.Drawing.Point(123, 314)
+        Me.TextBox10.Enabled = False
+        Me.TextBox10.Location = New System.Drawing.Point(123, 305)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(200, 20)
         Me.TextBox10.TabIndex = 33
         '
         'TextBox9
         '
-        Me.TextBox9.Location = New System.Drawing.Point(123, 283)
+        Me.TextBox9.Enabled = False
+        Me.TextBox9.Location = New System.Drawing.Point(123, 279)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(200, 20)
         Me.TextBox9.TabIndex = 32
@@ -133,7 +136,7 @@ Partial Class Buscar
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label11.Location = New System.Drawing.Point(11, 317)
+        Me.Label11.Location = New System.Drawing.Point(11, 312)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(106, 13)
         Me.Label11.TabIndex = 24
@@ -151,6 +154,7 @@ Partial Class Buscar
         '
         'TextBox8
         '
+        Me.TextBox8.Enabled = False
         Me.TextBox8.Location = New System.Drawing.Point(123, 253)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(200, 20)
@@ -168,6 +172,7 @@ Partial Class Buscar
         '
         'TextBox7
         '
+        Me.TextBox7.Enabled = False
         Me.TextBox7.Location = New System.Drawing.Point(123, 227)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(200, 20)
@@ -185,6 +190,7 @@ Partial Class Buscar
         '
         'TextBox6
         '
+        Me.TextBox6.Enabled = False
         Me.TextBox6.Location = New System.Drawing.Point(123, 201)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(200, 20)
@@ -202,6 +208,7 @@ Partial Class Buscar
         '
         'TextBox5
         '
+        Me.TextBox5.Enabled = False
         Me.TextBox5.Location = New System.Drawing.Point(123, 175)
         Me.TextBox5.Name = "TextBox5"
         Me.TextBox5.Size = New System.Drawing.Size(200, 20)
@@ -219,6 +226,7 @@ Partial Class Buscar
         '
         'TextBox4
         '
+        Me.TextBox4.Enabled = False
         Me.TextBox4.Location = New System.Drawing.Point(123, 149)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(200, 20)
@@ -236,6 +244,7 @@ Partial Class Buscar
         '
         'TextBox3
         '
+        Me.TextBox3.Enabled = False
         Me.TextBox3.Location = New System.Drawing.Point(123, 123)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(200, 20)
@@ -253,6 +262,7 @@ Partial Class Buscar
         '
         'TextBox2
         '
+        Me.TextBox2.Enabled = False
         Me.TextBox2.Location = New System.Drawing.Point(123, 97)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(200, 20)

@@ -56,4 +56,16 @@ Public Class Eliminar
         TextBox10.Text = ""
         TextBox11.Text = ""
     End Sub
+
+
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+        Dim comando As New OleDbDataAdapter("DELETE FROM [User] WHERE Cui= '" + TextBox1.Text + "'", cadena)
+        Dim ds As New DataSet
+        comando.Fill(ds)
+        cadena.Open()
+        cadena.Close()
+
+    End Sub
 End Class

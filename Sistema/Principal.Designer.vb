@@ -23,15 +23,27 @@ Partial Class Principal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(776, 426)
         Me.Panel1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(678, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(84, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Cerrar Sesion"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Principal
         '
@@ -44,9 +56,11 @@ Partial Class Principal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Principal"
         Me.Text = "Principal"
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
     Friend WithEvents Panel1 As Panel
+    Friend WithEvents Button1 As Button
 End Class
