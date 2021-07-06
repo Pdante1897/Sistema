@@ -60,7 +60,7 @@ Public Class Login
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        MsgBox("Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez")
+        MsgBox("Grupo 6" + vbCr + vbCr + "Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez")
 
     End Sub
 End Class
