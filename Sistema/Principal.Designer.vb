@@ -41,28 +41,37 @@ Partial Class Principal
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label20)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label10)
@@ -82,14 +91,14 @@ Partial Class Principal
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Location = New System.Drawing.Point(10, 11)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(778, 636)
+        Me.Panel1.Size = New System.Drawing.Size(850, 566)
         Me.Panel1.TabIndex = 1
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(319, 22)
+        Me.Label8.Location = New System.Drawing.Point(319, 68)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(22, 13)
@@ -100,7 +109,7 @@ Partial Class Principal
         '
         Me.Label9.AutoSize = True
         Me.Label9.ForeColor = System.Drawing.Color.White
-        Me.Label9.Location = New System.Drawing.Point(319, 100)
+        Me.Label9.Location = New System.Drawing.Point(319, 146)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(39, 13)
@@ -111,7 +120,7 @@ Partial Class Principal
         '
         Me.Label10.AutoSize = True
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(319, 87)
+        Me.Label10.Location = New System.Drawing.Point(319, 133)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(49, 13)
@@ -122,7 +131,7 @@ Partial Class Principal
         '
         Me.Label11.AutoSize = True
         Me.Label11.ForeColor = System.Drawing.Color.White
-        Me.Label11.Location = New System.Drawing.Point(319, 74)
+        Me.Label11.Location = New System.Drawing.Point(319, 120)
         Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(52, 13)
@@ -133,7 +142,7 @@ Partial Class Principal
         '
         Me.Label12.AutoSize = True
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(319, 61)
+        Me.Label12.Location = New System.Drawing.Point(319, 107)
         Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(43, 13)
@@ -144,7 +153,7 @@ Partial Class Principal
         '
         Me.Label13.AutoSize = True
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(319, 48)
+        Me.Label13.Location = New System.Drawing.Point(319, 94)
         Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(49, 13)
@@ -155,7 +164,7 @@ Partial Class Principal
         '
         Me.Label14.AutoSize = True
         Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(319, 35)
+        Me.Label14.Location = New System.Drawing.Point(319, 81)
         Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(49, 13)
@@ -166,7 +175,7 @@ Partial Class Principal
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(231, 22)
+        Me.Label7.Location = New System.Drawing.Point(231, 68)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(25, 13)
@@ -177,7 +186,7 @@ Partial Class Principal
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(231, 100)
+        Me.Label6.Location = New System.Drawing.Point(231, 146)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(42, 13)
@@ -188,7 +197,7 @@ Partial Class Principal
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(231, 87)
+        Me.Label5.Location = New System.Drawing.Point(231, 133)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
@@ -199,7 +208,7 @@ Partial Class Principal
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(231, 74)
+        Me.Label4.Location = New System.Drawing.Point(231, 120)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(55, 13)
@@ -210,7 +219,7 @@ Partial Class Principal
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(231, 61)
+        Me.Label3.Location = New System.Drawing.Point(231, 107)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(46, 13)
@@ -221,7 +230,7 @@ Partial Class Principal
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(231, 48)
+        Me.Label2.Location = New System.Drawing.Point(231, 94)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(52, 13)
@@ -232,7 +241,7 @@ Partial Class Principal
         '
         Me.Label1.AutoSize = True
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(231, 35)
+        Me.Label1.Location = New System.Drawing.Point(231, 81)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(52, 13)
@@ -257,7 +266,7 @@ Partial Class Principal
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(751, 438)
+        Me.TabControl1.Size = New System.Drawing.Size(829, 370)
         Me.TabControl1.TabIndex = 11
         '
         'TabPage1
@@ -267,151 +276,230 @@ Partial Class Principal
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(2)
-        Me.TabPage1.Size = New System.Drawing.Size(743, 412)
+        Me.TabPage1.Size = New System.Drawing.Size(821, 412)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "TabPage1"
+        Me.TabPage1.Text = "Servicios"
         '
         'TabPage2
         '
         Me.TabPage2.BackColor = System.Drawing.Color.DimGray
-        Me.TabPage2.Controls.Add(Me.TextBox4)
-        Me.TabPage2.Controls.Add(Me.TextBox3)
-        Me.TabPage2.Controls.Add(Me.TextBox2)
-        Me.TabPage2.Controls.Add(Me.TextBox1)
-        Me.TabPage2.Controls.Add(Me.Label19)
-        Me.TabPage2.Controls.Add(Me.Label18)
-        Me.TabPage2.Controls.Add(Me.Label17)
-        Me.TabPage2.Controls.Add(Me.Label16)
-        Me.TabPage2.Controls.Add(Me.Label15)
-        Me.TabPage2.Controls.Add(Me.ComboBox1)
+        Me.TabPage2.Controls.Add(Me.Button5)
+        Me.TabPage2.Controls.Add(Me.Button4)
+        Me.TabPage2.Controls.Add(Me.Button3)
+        Me.TabPage2.Controls.Add(Me.Button2)
+        Me.TabPage2.Controls.Add(Me.GroupBox1)
+        Me.TabPage2.Controls.Add(Me.Label21)
         Me.TabPage2.Controls.Add(Me.DataGridView1)
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(2)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(2)
-        Me.TabPage2.Size = New System.Drawing.Size(743, 412)
+        Me.TabPage2.Size = New System.Drawing.Size(821, 344)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "TabPage2"
+        Me.TabPage2.Text = "Vehiculos"
         '
-        'Button1
+        'TextBox4
         '
-        Me.Button1.Location = New System.Drawing.Point(678, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(84, 23)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Cerrar Sesion"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.TextBox4.Location = New System.Drawing.Point(113, 100)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox4.TabIndex = 28
         '
-        'DataGridView1
+        'TextBox3
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(307, 146)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(431, 261)
-        Me.DataGridView1.TabIndex = 0
+        Me.TextBox3.Location = New System.Drawing.Point(113, 74)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox3.TabIndex = 27
         '
-        'ComboBox1
+        'TextBox2
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(122, 252)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.TextBox2.Location = New System.Drawing.Point(113, 48)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox2.TabIndex = 26
         '
-        'Label15
+        'TextBox1
         '
-        Me.Label15.AutoSize = True
-        Me.Label15.ForeColor = System.Drawing.Color.White
-        Me.Label15.Location = New System.Drawing.Point(40, 155)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(37, 13)
-        Me.Label15.TabIndex = 20
-        Me.Label15.Text = "Placa:"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.ForeColor = System.Drawing.Color.White
-        Me.Label16.Location = New System.Drawing.Point(40, 181)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(31, 13)
-        Me.Label16.TabIndex = 21
-        Me.Label16.Text = "Tipo:"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.ForeColor = System.Drawing.Color.White
-        Me.Label17.Location = New System.Drawing.Point(40, 207)
-        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(40, 13)
-        Me.Label17.TabIndex = 22
-        Me.Label17.Text = "Marca:"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.ForeColor = System.Drawing.Color.White
-        Me.Label18.Location = New System.Drawing.Point(40, 233)
-        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(34, 13)
-        Me.Label18.TabIndex = 23
-        Me.Label18.Text = "Color:"
+        Me.TextBox1.Location = New System.Drawing.Point(113, 22)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 25
         '
         'Label19
         '
         Me.Label19.AutoSize = True
         Me.Label19.ForeColor = System.Drawing.Color.White
-        Me.Label19.Location = New System.Drawing.Point(40, 260)
+        Me.Label19.Location = New System.Drawing.Point(31, 134)
         Me.Label19.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(45, 13)
         Me.Label19.TabIndex = 24
         Me.Label19.Text = "Modelo:"
         '
-        'TextBox1
+        'Label18
         '
-        Me.TextBox1.Location = New System.Drawing.Point(122, 148)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 25
+        Me.Label18.AutoSize = True
+        Me.Label18.ForeColor = System.Drawing.Color.White
+        Me.Label18.Location = New System.Drawing.Point(31, 107)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(34, 13)
+        Me.Label18.TabIndex = 23
+        Me.Label18.Text = "Color:"
         '
-        'TextBox2
+        'Label17
         '
-        Me.TextBox2.Location = New System.Drawing.Point(122, 174)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 26
+        Me.Label17.AutoSize = True
+        Me.Label17.ForeColor = System.Drawing.Color.White
+        Me.Label17.Location = New System.Drawing.Point(31, 81)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(40, 13)
+        Me.Label17.TabIndex = 22
+        Me.Label17.Text = "Marca:"
         '
-        'TextBox3
+        'Label16
         '
-        Me.TextBox3.Location = New System.Drawing.Point(122, 200)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 27
+        Me.Label16.AutoSize = True
+        Me.Label16.ForeColor = System.Drawing.Color.White
+        Me.Label16.Location = New System.Drawing.Point(31, 55)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(31, 13)
+        Me.Label16.TabIndex = 21
+        Me.Label16.Text = "Tipo:"
         '
-        'TextBox4
+        'Label15
         '
-        Me.TextBox4.Location = New System.Drawing.Point(122, 226)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox4.TabIndex = 28
+        Me.Label15.AutoSize = True
+        Me.Label15.ForeColor = System.Drawing.Color.White
+        Me.Label15.Location = New System.Drawing.Point(31, 29)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(37, 13)
+        Me.Label15.TabIndex = 20
+        Me.Label15.Text = "Placa:"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(113, 126)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(100, 21)
+        Me.ComboBox1.TabIndex = 1
+        Me.ComboBox1.Text = "Seleccionar"
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(289, 73)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.Size = New System.Drawing.Size(529, 261)
+        Me.DataGridView1.TabIndex = 0
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(743, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(84, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Cerrar Sesion"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.White
+        Me.Label20.Location = New System.Drawing.Point(384, 12)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(73, 31)
+        Me.Label20.TabIndex = 27
+        Me.Label20.Text = "Perfil"
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.White
+        Me.Label21.Location = New System.Drawing.Point(301, 11)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(121, 31)
+        Me.Label21.TabIndex = 29
+        Me.Label21.Text = "Vehiculos"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.DimGray
+        Me.GroupBox1.Controls.Add(Me.Label15)
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label16)
+        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.Label17)
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label18)
+        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.Label19)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 73)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(246, 171)
+        Me.GroupBox1.TabIndex = 31
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Datos"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(13, 261)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 32
+        Me.Button2.Text = "Registrar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(94, 261)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(83, 23)
+        Me.Button3.TabIndex = 33
+        Me.Button3.Text = "Limpiar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(183, 261)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 34
+        Me.Button4.Text = "Eliminar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(94, 290)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(83, 23)
+        Me.Button5.TabIndex = 35
+        Me.Button5.Text = "Refrescar"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(801, 659)
+        Me.ClientSize = New System.Drawing.Size(872, 583)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Principal"
-        Me.Text = "Principal"
+        Me.Text = "Sistema"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -419,6 +507,8 @@ Partial Class Principal
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -454,4 +544,11 @@ Partial Class Principal
     Friend WithEvents Label17 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label20 As Label
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Button5 As Button
 End Class

@@ -30,6 +30,7 @@ Public Class Principal
         MsgBox("Bienvenido!")
         Dim foto As Control
         InicioCombo()
+
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT * FROM [User] WHERE Usuario= '" + Login.Sesion + "'", cadena)
@@ -58,6 +59,77 @@ Public Class Principal
     End Sub
 
     Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
+        actualizar()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("INSERT INTO [Vehiculos] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', " + ComboBox1.SelectedItem.ToString + ", '" + Cui + "')", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            cadena.Close()
+            MsgBox("Registro realizado con exito!")
+        Catch ex As Exception
+            cadena.Close()
+            MsgBox("Error! Revisar datos.")
+        End Try
+
+        clear()
+
+
+    End Sub
+    Private Sub actualizar()
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("SELECT Placa, Tipo, Marca, Color, Modelo FROM [Vehiculos] WHERE Cui= '" + Cui + "'", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            DataGridView1.DataSource = ds.Tables(0)
+            cadena.Close()
+        Catch ex As Exception
+            cadena.Close()
+            MsgBox("Error!" + vbCr + "Asegurece que la base de datos exista!")
+        End Try
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        actualizar()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+
+        clear()
+
+
+    End Sub
+    Private Sub clear()
+        TextBox1.Text = ""
+        TextBox2.Text = ""
+        TextBox3.Text = ""
+        TextBox4.Text = ""
+        ComboBox1.Text = "Seleccionar"
+    End Sub
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("DELETE FROM [Vehiculos] WHERE Placa= '" + TextBox1.Text + "'", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            cadena.Close()
+            MsgBox("Eliminado exitosamente")
+        Catch ex As Exception
+            MsgBox("Error! Verifique los datos ingresados")
+            cadena.Close()
+
+        End Try
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 End Class
+

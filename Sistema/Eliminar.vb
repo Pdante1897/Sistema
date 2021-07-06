@@ -60,12 +60,21 @@ Public Class Eliminar
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
-        Dim comando As New OleDbDataAdapter("DELETE FROM [User] WHERE Cui= '" + TextBox1.Text + "'", cadena)
-        Dim ds As New DataSet
-        comando.Fill(ds)
-        cadena.Open()
-        cadena.Close()
+
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("DELETE FROM [User] WHERE Cui= '" + TextBox1.Text + "'", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            cadena.Close()
+            MsgBox("Eliminado exitosamente")
+        Catch ex As Exception
+            MsgBox("Error! Verifique los datos ingresados")
+            cadena.Close()
+
+        End Try
+
 
     End Sub
 End Class

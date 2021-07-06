@@ -45,7 +45,6 @@ Public Class Login
                 Return True
             Else
                 cadena.Close()
-
                 Return False
             End If
         Catch ex As Exception

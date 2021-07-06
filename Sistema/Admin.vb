@@ -49,4 +49,19 @@ Public Class Admin
 
 
     End Sub
+
+    Private Sub actualizar()
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("SELECT Placa, Tipo, Marca, Color, Modelo FROM [Vehiculos]", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            DataGridView1.DataSource = ds.Tables(0)
+            cadena.Close()
+        Catch ex As Exception
+            cadena.Close()
+            MsgBox("Error!" + vbCr + "Asegurece que la base de datos exista!")
+        End Try
+    End Sub
 End Class
