@@ -2,9 +2,11 @@
 Imports System.IO
 
 Public Class Login
+    Public Shared Sesion As String
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim registrar As New Registrar
-        'Registrar.Show()
+        Dim registrar As New Principal
+        registrar.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -39,6 +41,7 @@ Public Class Login
             pass = ds.GetString(0)
             If pass = TextBox2.Text Then
                 cadena.Close()
+                Sesion = TextBox1.Text
                 Return True
             Else
                 cadena.Close()
@@ -49,16 +52,15 @@ Public Class Login
             cadena.Close()
             Return False
         End Try
-
-
-
-
-
-
     End Function
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         End
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        MsgBox("Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez")
+
     End Sub
 End Class

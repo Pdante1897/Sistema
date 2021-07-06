@@ -59,4 +59,7 @@ Public Class Buscar
 
     End Sub
 
+    Private Sub Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
