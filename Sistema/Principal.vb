@@ -4,8 +4,10 @@ Public Class Principal
     Public Shared Cui As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim login As New Login
-        login.Show()
+        Cui = ""
+        Login.Sesion = ""
+        Dim loginV As New Login
+        loginV.Show()
         Me.Hide()
     End Sub
 
@@ -28,7 +30,7 @@ Public Class Principal
     End Sub
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MsgBox("Bienvenido!")
-        Dim foto As Control
+        Dim foto As New Control
         InicioCombo()
 
         Try
@@ -45,22 +47,21 @@ Public Class Principal
             Label11.DataBindings.Add("Text", ds.Tables(0), "Direccion")
             Label10.DataBindings.Add("Text", ds.Tables(0), "Telefono")
             Label9.DataBindings.Add("Text", ds.Tables(0), "Celular")
-            foto.DataBindings.Add("Text", ds.Tables(0), "Foto")
+            Label22.DataBindings.Add("Text", ds.Tables(0), "Foto")
             cadena.Close()
         Catch ex As Exception
             cadena.Close()
         End Try
+
         Try
-            PictureBox1.Load(foto.Text)
+            PictureBox1.Load(Label22.Text)
         Catch ex As Exception
             PictureBox1.Load(My.Computer.FileSystem.CurrentDirectory + "\incognito.png")
 
         End Try
     End Sub
 
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles TabPage2.Click
-        actualizar()
-    End Sub
+
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Try
@@ -77,6 +78,7 @@ Public Class Principal
         End Try
 
         clear()
+        actualizar()
 
 
     End Sub
@@ -129,6 +131,14 @@ Public Class Principal
     End Sub
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
+    End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
 End Class

@@ -14,3 +14,4 @@ C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Principal.resource
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Eliminar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Buscar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Registrar.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Database2.mdb

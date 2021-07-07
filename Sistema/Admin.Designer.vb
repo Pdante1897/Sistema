@@ -109,7 +109,7 @@ Partial Class Admin
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(114, 38)
         Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Registrar Recidente"
+        Me.Button1.Text = "Registrar Residente"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
