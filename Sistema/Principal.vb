@@ -141,5 +141,13 @@ Public Class Principal
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
 
     End Sub
+
+    Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
+
+    End Sub
+
+    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+
+    End Sub
 End Class
 

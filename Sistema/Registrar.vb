@@ -59,4 +59,19 @@ Public Class Registrar
         TextBox9.Text = ""
     End Sub
 
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            CheckBox2.Enabled = False
+        ElseIf Not CheckBox1.Checked Then
+            CheckBox2.Enabled = True
+        End If
+    End Sub
+
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked Then
+            CheckBox1.Enabled = False
+        ElseIf Not CheckBox2.Checked Then
+            CheckBox1.Enabled = True
+        End If
+    End Sub
 End Class

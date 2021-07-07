@@ -51,6 +51,8 @@ Partial Class Registrar
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -58,6 +60,8 @@ Partial Class Registrar
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.CheckBox2)
+        Me.Panel1.Controls.Add(Me.CheckBox1)
         Me.Panel1.Controls.Add(Me.TextBox9)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.Button4)
@@ -329,6 +333,28 @@ Partial Class Registrar
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.CheckBox1.Location = New System.Drawing.Point(14, 355)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(59, 17)
+        Me.CheckBox1.TabIndex = 32
+        Me.CheckBox1.Text = "Cuotas"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.CheckBox2.Location = New System.Drawing.Point(14, 378)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(55, 17)
+        Me.CheckBox2.TabIndex = 33
+        Me.CheckBox2.Text = "Renta"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
         'Registrar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -376,4 +402,6 @@ Partial Class Registrar
     Friend WithEvents Button4 As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
