@@ -2,7 +2,6 @@ C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.exe.config
 C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.exe
 C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.pdb
 C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Sistema.xml
-C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.vbprojAssemblyReference.cache
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Resources.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.vbproj.GenerateResource.cache
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.exe
@@ -14,7 +13,6 @@ C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Principal.resource
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Eliminar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Buscar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Registrar.resources
-C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Database2.mdb
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Pagos.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Iusi.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Cuotas.resources

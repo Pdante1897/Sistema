@@ -9,7 +9,7 @@ Public Class Login
         'registrar.Show()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'boton ingresar
         If Consulta() Then
             Dim principal As New Principal
             principal.Show()
@@ -29,7 +29,7 @@ Public Class Login
 
     Dim cadena As New OleDbConnection
 
-    Private Function Consulta()
+    Private Function Consulta() 'funcion para realizar consulta de usuario y contrasenia 
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbCommand("SELECT Password FROM [User] WHERE Usuario= '" + TextBox1.Text + "'", cadena)
@@ -54,11 +54,11 @@ Public Class Login
     End Function
 
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 'boton salir
         End
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click 'boton creditos
         MsgBox("Grupo 6" + vbCr + vbCr + "Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez")
 
     End Sub
