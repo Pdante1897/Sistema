@@ -73,6 +73,9 @@ Partial Class Principal
         Me.Label21 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -311,6 +314,9 @@ Partial Class Principal
         'TabPage1
         '
         Me.TabPage1.BackColor = System.Drawing.Color.DimGray
+        Me.TabPage1.Controls.Add(Me.Label26)
+        Me.TabPage1.Controls.Add(Me.ComboBox4)
+        Me.TabPage1.Controls.Add(Me.Button11)
         Me.TabPage1.Controls.Add(Me.Label25)
         Me.TabPage1.Controls.Add(Me.GroupBox2)
         Me.TabPage1.Controls.Add(Me.Button9)
@@ -345,7 +351,7 @@ Partial Class Principal
         Me.GroupBox2.Controls.Add(Me.Button6)
         Me.GroupBox2.Controls.Add(Me.ComboBox3)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox2.Location = New System.Drawing.Point(24, 64)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 64)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(234, 173)
         Me.GroupBox2.TabIndex = 23
@@ -416,27 +422,27 @@ Partial Class Principal
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(702, 176)
+        Me.Button9.Location = New System.Drawing.Point(689, 200)
         Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(113, 33)
+        Me.Button9.Size = New System.Drawing.Size(126, 46)
         Me.Button9.TabIndex = 6
-        Me.Button9.Text = "Cuota"
+        Me.Button9.Text = "Mensualidad"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(703, 119)
+        Me.Button8.Location = New System.Drawing.Point(689, 100)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(112, 33)
+        Me.Button8.Size = New System.Drawing.Size(125, 41)
         Me.Button8.TabIndex = 5
-        Me.Button8.Text = "Renta"
+        Me.Button8.Text = "Visualizar pagos IUSI"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(702, 64)
+        Me.Button7.Location = New System.Drawing.Point(687, 53)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(113, 33)
+        Me.Button7.Size = New System.Drawing.Size(127, 41)
         Me.Button7.TabIndex = 4
         Me.Button7.Text = "Realizar Pago IUSI"
         Me.Button7.UseVisualStyleBackColor = True
@@ -444,7 +450,7 @@ Partial Class Principal
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(264, 64)
+        Me.DataGridView2.Location = New System.Drawing.Point(247, 53)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(436, 275)
         Me.DataGridView2.TabIndex = 0
@@ -647,6 +653,36 @@ Partial Class Principal
         Me.Button1.Text = "Cerrar Sesion"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(689, 252)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(125, 46)
+        Me.Button11.TabIndex = 31
+        Me.Button11.Text = "Visualizar Mensualidaes"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
+        Me.ComboBox4.Location = New System.Drawing.Point(720, 169)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(94, 21)
+        Me.ComboBox4.TabIndex = 32
+        Me.ComboBox4.Text = "Seleccionar"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.ForeColor = System.Drawing.Color.White
+        Me.Label26.Location = New System.Drawing.Point(688, 177)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(27, 13)
+        Me.Label26.TabIndex = 33
+        Me.Label26.Text = "Mes"
+        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -727,4 +763,7 @@ Partial Class Principal
     Friend WithEvents Button10 As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label25 As Label
+    Friend WithEvents Button11 As Button
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label26 As Label
 End Class

@@ -143,7 +143,8 @@ Public Class Principal
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-
+        Dim iusi As New Iusi
+        iusi.Show()
     End Sub
 
     Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
@@ -170,32 +171,61 @@ Public Class Principal
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Try
+            Select Case ComboBox2.SelectedItem.ToString()
+                Case "Agua"
+                    monto = 150
+                Case "Luz"
+                    monto = 250
+                Case "Telefono"
+                    monto = 150
+                Case "Internet"
+                    monto = 300
+                Case "Cable"
+                    monto = 200
+                Case "Gas"
+                    monto = 125
+                Case "Limpieza"
+                    monto = 100
+                Case "Mantenimiento y Seguridad"
+                    monto = 300
+                Case Else
+                    MsgBox("error")
+                    Return
+            End Select
+            servicio = ComboBox2.SelectedItem.ToString()
+            mes = ComboBox3.SelectedItem.ToString()
+            Dim pago As New Pagos
+            pago.Show()
+        Catch ex As Exception
+            MsgBox("Seleccione Mes y Servicio")
+        End Try
 
-        Select Case ComboBox2.SelectedItem.ToString()
-            Case "Agua"
-                monto = 150
-            Case "Luz"
-                monto = 250
-            Case "Telefono"
-                monto = 150
-            Case "Internet"
-                monto = 300
-            Case "Cable"
-                monto = 200
-            Case "Gas"
-                monto = 125
-            Case "Limpieza"
-                monto = 100
-            Case "Mantenimiento y Seguridad"
-                monto = 300
-            Case Else
-                MsgBox("error")
-        End Select
-        servicio = ComboBox2.SelectedItem.ToString()
-        mes = ComboBox3.SelectedItem.ToString()
-        Dim pago As New Pagos
-        pago.Show()
 
+    End Sub
+
+    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
+
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Try
+            mes = ComboBox4.SelectedItem.ToString()
+            Dim cuota As New Cuotas
+            cuota.Show()
+        Catch ex As Exception
+            MsgBox("Seleccione Mes")
+        End Try
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim listaIusi As New ListaIUSI
+        listaIusi.Show()
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim listaCuot As New ListaCuotas
+        listaCuot.Show()
     End Sub
 End Class
 

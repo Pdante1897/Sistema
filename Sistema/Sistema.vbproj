@@ -86,10 +86,34 @@
     <Compile Include="Buscar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Cuotas.Designer.vb">
+      <DependentUpon>Cuotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cuotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Eliminar.Designer.vb">
       <DependentUpon>Eliminar.vb</DependentUpon>
     </Compile>
     <Compile Include="Eliminar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Iusi.Designer.vb">
+      <DependentUpon>Iusi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Iusi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaCuotas.Designer.vb">
+      <DependentUpon>ListaCuotas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaCuotas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaIUSI.Designer.vb">
+      <DependentUpon>ListaIUSI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaIUSI.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pagos.Designer.vb">
@@ -140,8 +164,20 @@
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cuotas.resx">
+      <DependentUpon>Cuotas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Eliminar.resx">
       <DependentUpon>Eliminar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Iusi.resx">
+      <DependentUpon>Iusi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaCuotas.resx">
+      <DependentUpon>ListaCuotas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaIUSI.resx">
+      <DependentUpon>ListaIUSI.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>

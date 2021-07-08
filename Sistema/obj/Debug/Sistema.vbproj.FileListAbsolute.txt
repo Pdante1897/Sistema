@@ -16,3 +16,7 @@ C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Buscar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Registrar.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\bin\Debug\Database2.mdb
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Pagos.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Iusi.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Cuotas.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.ListaIUSI.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.ListaCuotas.resources
