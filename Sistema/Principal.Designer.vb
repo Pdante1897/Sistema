@@ -42,14 +42,17 @@ Partial Class Principal
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label23 = New System.Windows.Forms.Label()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Button9 = New System.Windows.Forms.Button()
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -70,18 +73,15 @@ Partial Class Principal
         Me.Label21 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label25 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -325,16 +325,32 @@ Partial Class Principal
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Pagos"
         '
-        'Label24
+        'Label25
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.ForeColor = System.Drawing.Color.White
-        Me.Label24.Location = New System.Drawing.Point(5, 75)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(27, 13)
-        Me.Label24.TabIndex = 21
-        Me.Label24.Text = "Mes"
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.Label25.Location = New System.Drawing.Point(374, 2)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(77, 31)
+        Me.Label25.TabIndex = 30
+        Me.Label25.Text = "Pagos"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label23)
+        Me.GroupBox2.Controls.Add(Me.Button10)
+        Me.GroupBox2.Controls.Add(Me.ComboBox2)
+        Me.GroupBox2.Controls.Add(Me.Label24)
+        Me.GroupBox2.Controls.Add(Me.Button6)
+        Me.GroupBox2.Controls.Add(Me.ComboBox3)
+        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox2.Location = New System.Drawing.Point(24, 64)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(234, 173)
+        Me.GroupBox2.TabIndex = 23
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Pago de Servicios"
         '
         'Label23
         '
@@ -347,37 +363,41 @@ Partial Class Principal
         Me.Label23.TabIndex = 20
         Me.Label23.Text = "Servicio"
         '
-        'Button9
+        'Button10
         '
-        Me.Button9.Location = New System.Drawing.Point(507, 38)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(92, 33)
-        Me.Button9.TabIndex = 6
-        Me.Button9.Text = "Cuota"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button10.Location = New System.Drawing.Point(6, 105)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(89, 40)
+        Me.Button10.TabIndex = 22
+        Me.Button10.Text = "Refrescar"
+        Me.Button10.UseVisualStyleBackColor = True
         '
-        'Button8
+        'ComboBox2
         '
-        Me.Button8.Location = New System.Drawing.Point(605, 38)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(92, 33)
-        Me.Button8.TabIndex = 5
-        Me.Button8.Text = "Renta"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Agua", "Luz", "Telefono", "Internet", "Cable", "Gas", "Limpieza", "Mantenimiento y Seguridad"})
+        Me.ComboBox2.Location = New System.Drawing.Point(82, 40)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(134, 21)
+        Me.ComboBox2.TabIndex = 1
+        Me.ComboBox2.Text = "Seleccionar"
         '
-        'Button7
+        'Label24
         '
-        Me.Button7.Location = New System.Drawing.Point(703, 38)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(113, 33)
-        Me.Button7.TabIndex = 4
-        Me.Button7.Text = "Realizar Pago IUSI"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.Label24.AutoSize = True
+        Me.Label24.ForeColor = System.Drawing.Color.White
+        Me.Label24.Location = New System.Drawing.Point(5, 75)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(27, 13)
+        Me.Label24.TabIndex = 21
+        Me.Label24.Text = "Mes"
         '
         'Button6
         '
         Me.Button6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button6.Location = New System.Drawing.Point(101, 105)
+        Me.Button6.Location = New System.Drawing.Point(127, 105)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(89, 40)
         Me.Button6.TabIndex = 3
@@ -388,28 +408,45 @@ Partial Class Principal
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
-        Me.ComboBox3.Location = New System.Drawing.Point(56, 67)
+        Me.ComboBox3.Location = New System.Drawing.Point(81, 67)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(135, 21)
         Me.ComboBox3.TabIndex = 2
         Me.ComboBox3.Text = "Seleccionar"
         '
-        'ComboBox2
+        'Button9
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Agua", "Luz", "Telefono", "Internet", "Cable", "Gas", "Limpieza", "Mantenimiento y Seguridad"})
-        Me.ComboBox2.Location = New System.Drawing.Point(56, 40)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(134, 21)
-        Me.ComboBox2.TabIndex = 1
-        Me.ComboBox2.Text = "Seleccionar"
+        Me.Button9.Location = New System.Drawing.Point(702, 176)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(113, 33)
+        Me.Button9.TabIndex = 6
+        Me.Button9.Text = "Cuota"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(703, 119)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(112, 33)
+        Me.Button8.TabIndex = 5
+        Me.Button8.Text = "Renta"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(702, 64)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(113, 33)
+        Me.Button7.TabIndex = 4
+        Me.Button7.Text = "Realizar Pago IUSI"
+        Me.Button7.UseVisualStyleBackColor = True
         '
         'DataGridView2
         '
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView2.Location = New System.Drawing.Point(219, 77)
+        Me.DataGridView2.Location = New System.Drawing.Point(264, 64)
         Me.DataGridView2.Name = "DataGridView2"
-        Me.DataGridView2.Size = New System.Drawing.Size(597, 262)
+        Me.DataGridView2.Size = New System.Drawing.Size(436, 275)
         Me.DataGridView2.TabIndex = 0
         '
         'TabPage2
@@ -610,43 +647,6 @@ Partial Class Principal
         Me.Button1.Text = "Cerrar Sesion"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button10
-        '
-        Me.Button10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button10.Location = New System.Drawing.Point(6, 105)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(89, 40)
-        Me.Button10.TabIndex = 22
-        Me.Button10.Text = "Refrescar"
-        Me.Button10.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.Label23)
-        Me.GroupBox2.Controls.Add(Me.Button10)
-        Me.GroupBox2.Controls.Add(Me.ComboBox2)
-        Me.GroupBox2.Controls.Add(Me.Label24)
-        Me.GroupBox2.Controls.Add(Me.Button6)
-        Me.GroupBox2.Controls.Add(Me.ComboBox3)
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox2.Location = New System.Drawing.Point(13, 151)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(200, 173)
-        Me.GroupBox2.TabIndex = 23
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Pago de Servicios"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.Label25.Location = New System.Drawing.Point(378, 0)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(77, 31)
-        Me.Label25.TabIndex = 30
-        Me.Label25.Text = "Pagos"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -664,14 +664,14 @@ Partial Class Principal
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

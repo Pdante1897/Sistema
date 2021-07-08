@@ -33,25 +33,25 @@ Partial Class Admin
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SistemaDataSetBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.SistemaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SistemaDataSetBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SistemaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.DataGridView1)
         Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(569, 480)
+        Me.Panel1.Size = New System.Drawing.Size(906, 421)
         Me.Panel1.TabIndex = 2
         '
         'Label2
@@ -59,7 +59,7 @@ Partial Class Admin
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(217, 167)
+        Me.Label2.Location = New System.Drawing.Point(461, 60)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(131, 31)
         Me.Label2.TabIndex = 11
@@ -70,15 +70,15 @@ Partial Class Admin
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(14, 214)
+        Me.DataGridView1.Location = New System.Drawing.Point(162, 94)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(542, 251)
+        Me.DataGridView1.Size = New System.Drawing.Size(732, 314)
         Me.DataGridView1.TabIndex = 10
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(472, 23)
+        Me.Button4.Location = New System.Drawing.Point(810, 23)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(84, 23)
         Me.Button4.TabIndex = 9
@@ -87,27 +87,30 @@ Partial Class Admin
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(445, 102)
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button3.Location = New System.Drawing.Point(6, 172)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(111, 38)
+        Me.Button3.Size = New System.Drawing.Size(127, 52)
         Me.Button3.TabIndex = 8
         Me.Button3.Text = "Eliminar"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(237, 102)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.Location = New System.Drawing.Point(6, 94)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(111, 38)
+        Me.Button2.Size = New System.Drawing.Size(127, 52)
         Me.Button2.TabIndex = 7
         Me.Button2.Text = "Buscar"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(14, 102)
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button1.Location = New System.Drawing.Point(6, 19)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(114, 38)
+        Me.Button1.Size = New System.Drawing.Size(127, 52)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Registrar Residente"
         Me.Button1.UseVisualStyleBackColor = True
@@ -117,18 +120,31 @@ Partial Class Admin
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(222, 23)
+        Me.Label1.Location = New System.Drawing.Point(14, 23)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(138, 31)
+        Me.Label1.Size = New System.Drawing.Size(301, 31)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Bienvenido"
+        Me.Label1.Text = "Bienvenido Administrador"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 94)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(142, 243)
+        Me.GroupBox1.TabIndex = 12
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Opciones"
         '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(593, 503)
+        Me.ClientSize = New System.Drawing.Size(930, 445)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
@@ -139,6 +155,7 @@ Partial Class Admin
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SistemaDataSetBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SistemaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -153,4 +170,5 @@ Partial Class Admin
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents SistemaDataSetBindingSource As BindingSource
     Friend WithEvents SistemaDataSetBindingSource1 As BindingSource
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

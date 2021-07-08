@@ -2,6 +2,10 @@
 
 Public Class Principal
     Public Shared Cui As String
+    Public Shared monto As Double
+    Public Shared servicio As String
+    Public Shared mes As String
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Cui = ""
@@ -147,6 +151,50 @@ Public Class Principal
     End Sub
 
     Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
+
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Try
+            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            Dim comando As New OleDbDataAdapter("SELECT Servicio, Mes, Fecha, Monto FROM [Pagos] WHERE Cui= '" + Cui + "'", cadena)
+            Dim ds As New DataSet
+            comando.Fill(ds)
+            cadena.Open()
+            DataGridView2.DataSource = ds.Tables(0)
+            cadena.Close()
+        Catch ex As Exception
+            cadena.Close()
+            MsgBox("Error!" + vbCr + "Asegurece que la base de datos exista!")
+        End Try
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+        Select Case ComboBox2.SelectedItem.ToString()
+            Case "Agua"
+                monto = 150
+            Case "Luz"
+                monto = 250
+            Case "Telefono"
+                monto = 150
+            Case "Internet"
+                monto = 300
+            Case "Cable"
+                monto = 200
+            Case "Gas"
+                monto = 125
+            Case "Limpieza"
+                monto = 100
+            Case "Mantenimiento y Seguridad"
+                monto = 300
+            Case Else
+                MsgBox("error")
+        End Select
+        servicio = ComboBox2.SelectedItem.ToString()
+        mes = ComboBox3.SelectedItem.ToString()
+        Dim pago As New Pagos
+        pago.Show()
 
     End Sub
 End Class
