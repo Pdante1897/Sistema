@@ -70,7 +70,7 @@ Partial Class ListaIUSI
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "ListaIUSI"
-        Me.Text = "ListaIUSI"
+        Me.Text = "Lista de IUSI"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

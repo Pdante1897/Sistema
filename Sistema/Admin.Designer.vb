@@ -24,21 +24,21 @@ Partial Class Admin
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SistemaDataSetBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.SistemaDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SistemaDataSetBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SistemaDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -51,8 +51,51 @@ Partial Class Admin
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(906, 421)
+        Me.Panel1.Size = New System.Drawing.Size(813, 421)
         Me.Panel1.TabIndex = 2
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.Controls.Add(Me.Button3)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox1.Location = New System.Drawing.Point(14, 94)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(142, 243)
+        Me.GroupBox1.TabIndex = 12
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Opciones"
+        '
+        'Button1
+        '
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button1.Location = New System.Drawing.Point(6, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(127, 52)
+        Me.Button1.TabIndex = 6
+        Me.Button1.Text = "Registrar Residente"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.Location = New System.Drawing.Point(6, 94)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(127, 52)
+        Me.Button2.TabIndex = 7
+        Me.Button2.Text = "Buscar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button3.Location = New System.Drawing.Point(6, 172)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(127, 52)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Eliminar"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -73,47 +116,17 @@ Partial Class Admin
         Me.DataGridView1.Location = New System.Drawing.Point(162, 94)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(732, 314)
+        Me.DataGridView1.Size = New System.Drawing.Size(638, 314)
         Me.DataGridView1.TabIndex = 10
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(810, 23)
+        Me.Button4.Location = New System.Drawing.Point(716, 23)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(84, 23)
         Me.Button4.TabIndex = 9
         Me.Button4.Text = "Cerrar Sesion"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button3.Location = New System.Drawing.Point(6, 172)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(127, 52)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Eliminar"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button2.Location = New System.Drawing.Point(6, 94)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(127, 52)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Buscar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Button1.Location = New System.Drawing.Point(6, 19)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(127, 52)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Registrar Residente"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -126,36 +139,23 @@ Partial Class Admin
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Bienvenido Administrador"
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.GroupBox1.Location = New System.Drawing.Point(14, 94)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(142, 243)
-        Me.GroupBox1.TabIndex = 12
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Opciones"
-        '
         'Admin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(43, Byte), Integer), CType(CType(38, Byte), Integer), CType(CType(38, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(930, 445)
+        Me.ClientSize = New System.Drawing.Size(832, 445)
         Me.ControlBox = False
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Admin"
-        Me.Text = "Sistema"
+        Me.Text = "Residence Control"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SistemaDataSetBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SistemaDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

@@ -226,7 +226,7 @@ Partial Class Iusi
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Iusi"
-        Me.Text = "Iusi"
+        Me.Text = "Pagos de Iusi"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

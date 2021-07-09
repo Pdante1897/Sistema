@@ -44,6 +44,18 @@ Public Class Eliminar
 
     End Sub
     Private Sub clear()
+        TextBox1.DataBindings.Clear()
+        TextBox2.DataBindings.Clear()
+        TextBox3.DataBindings.Clear()
+        TextBox4.DataBindings.Clear()
+        TextBox5.DataBindings.Clear()
+        TextBox6.DataBindings.Clear()
+        TextBox7.DataBindings.Clear()
+        TextBox8.DataBindings.Clear()
+        TextBox9.DataBindings.Clear()
+        TextBox10.DataBindings.Clear()
+        TextBox11.DataBindings.Clear()
+
         TextBox1.Text = ""
         TextBox2.Text = ""
         TextBox3.Text = ""
@@ -55,11 +67,12 @@ Public Class Eliminar
         TextBox9.Text = ""
         TextBox10.Text = ""
         TextBox11.Text = ""
+        PictureBox1.Image = Nothing
     End Sub
 
 
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'Eliminar
 
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"

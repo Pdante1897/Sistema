@@ -25,14 +25,14 @@ Public Class Principal
 
 
     Dim cadena As New OleDbConnection
-    Private Sub InicioCombo()
+    Private Sub InicioCombo() 'Agregar numeros a comboBox
         Dim n As Integer
         For n = Year(Now) To 1900 Step -1
 
             ComboBox1.Items.Add(n)
         Next
     End Sub
-    Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'carga de la ventana principal
         MsgBox("Bienvenido!")
         Dim foto As New Control
         InicioCombo()
@@ -67,7 +67,7 @@ Public Class Principal
 
 
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click 'boton registrar vehiculo
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [Vehiculos] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', " + ComboBox1.SelectedItem.ToString + ", '" + Cui + "')", cadena)
@@ -101,11 +101,11 @@ Public Class Principal
         End Try
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click 'boton refescar vehiculos
         actualizar()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 'limpiar
 
         clear()
 
@@ -118,7 +118,7 @@ Public Class Principal
         TextBox4.Text = ""
         ComboBox1.Text = "Seleccionar"
     End Sub
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click 'eliminar vehiculos
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("DELETE FROM [Vehiculos] WHERE Placa= '" + TextBox1.Text + "'", cadena)
@@ -134,28 +134,15 @@ Public Class Principal
         End Try
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
-    End Sub
-
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click 'boton pago iusi
         Dim iusi As New Iusi
         iusi.Show()
     End Sub
 
-    Private Sub Label23_Click(sender As Object, e As EventArgs) Handles Label23.Click
 
-    End Sub
 
-    Private Sub Label24_Click(sender As Object, e As EventArgs) Handles Label24.Click
-
-    End Sub
-
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click ' boton Refrescar pagos
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT Servicio, Mes, Fecha, Monto FROM [Pagos] WHERE Cui= '" + Cui + "'", cadena)
@@ -170,7 +157,7 @@ Public Class Principal
         End Try
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click 'pago de servicios
         Try
             Select Case ComboBox2.SelectedItem.ToString()
                 Case "Agua"
@@ -204,11 +191,9 @@ Public Class Principal
 
     End Sub
 
-    Private Sub Label26_Click(sender As Object, e As EventArgs) Handles Label26.Click
 
-    End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click 'boton mensualidad
         Try
             mes = ComboBox4.SelectedItem.ToString()
             Dim cuota As New Cuotas
@@ -218,12 +203,12 @@ Public Class Principal
         End Try
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click 'boton para visualizar iusi
         Dim listaIusi As New ListaIUSI
         listaIusi.Show()
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click 'boton para visualizar mensualidad
         Dim listaCuot As New ListaCuotas
         listaCuot.Show()
     End Sub

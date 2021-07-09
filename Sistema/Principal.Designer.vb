@@ -42,6 +42,9 @@ Partial Class Principal
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Button11 = New System.Windows.Forms.Button()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label23 = New System.Windows.Forms.Label()
@@ -73,9 +76,6 @@ Partial Class Principal
         Me.Label21 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
@@ -330,6 +330,36 @@ Partial Class Principal
         Me.TabPage1.Size = New System.Drawing.Size(821, 344)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Pagos"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.ForeColor = System.Drawing.Color.White
+        Me.Label26.Location = New System.Drawing.Point(688, 177)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(27, 13)
+        Me.Label26.TabIndex = 33
+        Me.Label26.Text = "Mes"
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
+        Me.ComboBox4.Location = New System.Drawing.Point(720, 169)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(94, 21)
+        Me.ComboBox4.TabIndex = 32
+        Me.ComboBox4.Text = "Seleccionar"
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(689, 252)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(125, 46)
+        Me.Button11.TabIndex = 31
+        Me.Button11.Text = "Visualizar Mensualidaes"
+        Me.Button11.UseVisualStyleBackColor = True
         '
         'Label25
         '
@@ -638,7 +668,7 @@ Partial Class Principal
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(289, 73)
+        Me.DataGridView1.Location = New System.Drawing.Point(277, 73)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(529, 261)
@@ -653,36 +683,6 @@ Partial Class Principal
         Me.Button1.Text = "Cerrar Sesion"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(689, 252)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(125, 46)
-        Me.Button11.TabIndex = 31
-        Me.Button11.Text = "Visualizar Mensualidaes"
-        Me.Button11.UseVisualStyleBackColor = True
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"})
-        Me.ComboBox4.Location = New System.Drawing.Point(720, 169)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(94, 21)
-        Me.ComboBox4.TabIndex = 32
-        Me.ComboBox4.Text = "Seleccionar"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.ForeColor = System.Drawing.Color.White
-        Me.Label26.Location = New System.Drawing.Point(688, 177)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(27, 13)
-        Me.Label26.TabIndex = 33
-        Me.Label26.Text = "Mes"
-        '
         'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -693,7 +693,7 @@ Partial Class Principal
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Principal"
-        Me.Text = "Sistema"
+        Me.Text = "Residence Control"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

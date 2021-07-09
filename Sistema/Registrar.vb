@@ -23,11 +23,12 @@ Public Class Registrar
     End Sub
 
     Dim cadena As New OleDbConnection
+    Dim mensualidad As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'boton Registrar
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
-            Dim comando As New OleDbDataAdapter("INSERT INTO [User] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '" + TextBox6.Text + "', '" + TextBox7.Text + "', '" + TextBox8.Text + "', '" + ComboBox1.SelectedItem.ToString() + "', '" + DateTimePicker1.Value.Date + "', '" + TextBox9.Text + "')", cadena)
+            Dim comando As New OleDbDataAdapter("INSERT INTO [User] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '" + TextBox6.Text + "', '" + TextBox7.Text + "', '" + TextBox8.Text + "', '" + ComboBox1.SelectedItem.ToString() + "', '" + DateTimePicker1.Value.Date + "', '" + TextBox9.Text + "', '" + mensualidad + "')", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
             cadena.Open()
@@ -41,13 +42,13 @@ Public Class Registrar
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click 'regresar
         Dim admin As New Admin
         admin.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click 'limpiar
         clear()
     End Sub
 
@@ -61,22 +62,27 @@ Public Class Registrar
         TextBox7.Text = ""
         TextBox8.Text = ""
         TextBox9.Text = ""
-        PictureBox1.Dispose()
+        PictureBox1.Image = Nothing
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked Then
             CheckBox2.Enabled = False
+            mensualidad = "Cuota"
         ElseIf Not CheckBox1.Checked Then
             CheckBox2.Enabled = True
+            mensualidad = "Sin Mensualidad"
         End If
     End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.Checked Then
             CheckBox1.Enabled = False
+            mensualidad = "Renta"
         ElseIf Not CheckBox2.Checked Then
             CheckBox1.Enabled = True
+            mensualidad = "Sin Mensualidad"
+
         End If
     End Sub
 

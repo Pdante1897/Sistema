@@ -14,7 +14,7 @@ Public Class Pagos
 
     Dim cadena As New OleDbConnection
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'pagar
         If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Then
             MsgBox("Error! Revisar datos.")
             Return
@@ -36,7 +36,7 @@ Public Class Pagos
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick 'timer de barra de progreso
         ProgressBar1.Increment(2)
         If ProgressBar1.Value = 100 Then
             Timer1.Stop()

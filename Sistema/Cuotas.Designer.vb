@@ -214,6 +214,9 @@ Partial Class Cuotas
         Me.Label25.TabIndex = 31
         Me.Label25.Text = "Pagos Mensualidad"
         '
+        'Timer1
+        '
+        '
         'Cuotas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -223,7 +226,7 @@ Partial Class Cuotas
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Cuotas"
-        Me.Text = "Cuotas"
+        Me.Text = "Pago de Cuotas"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

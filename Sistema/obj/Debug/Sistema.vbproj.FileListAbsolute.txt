@@ -18,3 +18,4 @@ C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Iusi.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.Cuotas.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.ListaIUSI.resources
 C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.ListaCuotas.resources
+C:\Users\gerar\source\repos\Sistema\Sistema\obj\Debug\Sistema.vbprojAssemblyReference.cache

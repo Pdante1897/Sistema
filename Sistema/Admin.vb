@@ -34,7 +34,7 @@ Public Class Admin
     Private Sub Admin_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'carga de la ventana Admin
         Try
             cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
-            Dim comando As New OleDbDataAdapter("SELECT Cui, Nombres, Apellidos, Usuario, Sexo FROM [User]", cadena)
+            Dim comando As New OleDbDataAdapter("SELECT Cui, Nombres, Apellidos, Usuario, Sexo, Mensualidad FROM [User]", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
             cadena.Open()

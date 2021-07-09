@@ -70,7 +70,7 @@ Partial Class ListaCuotas
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "ListaCuotas"
-        Me.Text = "ListaCuotas"
+        Me.Text = "Lista de Cuotas"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

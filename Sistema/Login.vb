@@ -14,8 +14,7 @@ Public Class Login
             Dim principal As New Principal
             principal.Show()
             Me.Hide()
-
-        ElseIf TextBox1.Text = "admin" And TextBox2.Text = "123" Then
+        ElseIf TextBox1.Text = "admin" And TextBox2.Text = "puronuevo123" Then
             Dim admin As New Admin
             admin.Show()
             Me.Hide()
@@ -59,7 +58,7 @@ Public Class Login
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click 'boton creditos
-        MsgBox("Grupo 6" + vbCr + vbCr + "Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez")
+        MsgBox("Grupo 6" + vbCr + vbCr + "Integrantes:" + vbCr + "Noé Estuardo Alarcón Vicente" + vbCr + "Erick Joseph Vielman Reyes" + vbCr + "José Andrés López Gómez" + vbCr + vbCr + "Residence Control 1.0 -2021-" + vbCr + "Para iniciar User: admin Pass: puronuevo123")
 
     End Sub
 End Class
