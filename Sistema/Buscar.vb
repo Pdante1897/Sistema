@@ -37,7 +37,7 @@ Public Class Buscar
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT * FROM [User] WHERE Cui= '" + TextBox1.Text + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
@@ -73,6 +73,10 @@ Public Class Buscar
     End Sub
 
     Private Sub Buscar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 End Class

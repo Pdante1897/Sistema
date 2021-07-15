@@ -92,11 +92,6 @@
     <Compile Include="Cuotas.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Database2DataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database2DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Eliminar.Designer.vb">
       <DependentUpon>Eliminar.vb</DependentUpon>
     </Compile>
@@ -204,17 +199,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Database2DataSet.xsc">
-      <DependentUpon>Database2DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database2DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database2DataSet.Designer.vb</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database2DataSet.xss">
-      <DependentUpon>Database2DataSet.xsd</DependentUpon>
-    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

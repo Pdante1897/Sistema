@@ -16,7 +16,7 @@ Public Class Iusi
         End If
         Timer1.Start()
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [IUSI] VALUES ('" + Principal.Cui + "', '" + CStr(DateTime.Today.Year) + "', '" + DateTime.Today + "', " + Label4.Text + ")", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)

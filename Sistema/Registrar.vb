@@ -27,7 +27,7 @@ Public Class Registrar
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click 'boton Registrar
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [User] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', '" + TextBox5.Text + "', '" + TextBox6.Text + "', '" + TextBox7.Text + "', '" + TextBox8.Text + "', '" + ComboBox1.SelectedItem.ToString() + "', '" + DateTimePicker1.Value.Date + "', '" + TextBox9.Text + "', '" + mensualidad + "')", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)

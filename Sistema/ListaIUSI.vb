@@ -5,7 +5,7 @@ Public Class ListaIUSI
 
     Private Sub ListaIUSI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT Año, Fecha, Monto FROM [IUSI] WHERE Cui= '" + Principal.Cui + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)

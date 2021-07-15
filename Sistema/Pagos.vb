@@ -21,7 +21,7 @@ Public Class Pagos
         End If
         Timer1.Start()
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [Pagos] VALUES ('" + Principal.Cui + "', '" + Principal.servicio + "', '" + Principal.mes + "', '" + DateTime.Today + "', " + CStr(Principal.monto) + ")", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)

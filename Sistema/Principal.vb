@@ -38,7 +38,7 @@ Public Class Principal
         InicioCombo()
 
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT * FROM [User] WHERE Usuario= '" + Login.Sesion + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
@@ -68,15 +68,19 @@ Public Class Principal
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click 'boton registrar vehiculo
+        If TextBox1.Text = "" Or TextBox2.Text = "" Or TextBox3.Text = "" Or TextBox4.Text = "" Then
+            MsgBox("Error! Revisar datos.")
+            Return
+        End If
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [Vehiculos] VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" + TextBox4.Text + "', " + ComboBox1.SelectedItem.ToString + ", '" + Cui + "')", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
             cadena.Open()
             cadena.Close()
             MsgBox("Registro realizado con exito!")
-        Catch ex As Exception
+        Catch ex As NullReferenceException
             cadena.Close()
             MsgBox("Error! Revisar datos.")
         End Try
@@ -88,7 +92,7 @@ Public Class Principal
     End Sub
     Private Sub actualizar()
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT Placa, Tipo, Marca, Color, Modelo FROM [Vehiculos] WHERE Cui= '" + Cui + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
@@ -120,7 +124,7 @@ Public Class Principal
     End Sub
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click 'eliminar vehiculos
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("DELETE FROM [Vehiculos] WHERE Placa= '" + TextBox1.Text + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
@@ -144,7 +148,7 @@ Public Class Principal
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click ' boton Refrescar pagos
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("SELECT Servicio, Mes, Fecha, Monto FROM [Pagos] WHERE Cui= '" + Cui + "'", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)

@@ -17,7 +17,7 @@ Public Class Cuotas
         End If
         Timer1.Start()
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
+            cadena.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Database2.mdb"
             Dim comando As New OleDbDataAdapter("INSERT INTO [Mensualidad] VALUES ('" + Principal.Cui + "', 'Mensualidad', '" + Principal.mes + "', '" + DateTime.Today + "', " + Label4.Text + ")", cadena)
             Dim ds As New DataSet
             comando.Fill(ds)
